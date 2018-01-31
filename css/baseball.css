@@ -1,0 +1,91 @@
+.subtitle {
+    text-align: center;
+    font-family: Arial;
+}
+
+th {
+    font-family: Arial;
+}
+
+td {
+    font-family: Arial;
+}
+
+.form > button {
+    background-color: red;
+    color: white;
+    font-family: Arial;
+}
+
+.form > button:hover {
+    background-color: white;
+    color: red;
+    font-family: Arial;
+}
+
+.form {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: red;
+}
+
+footer > p {
+    color: white;
+    font-family: Arial;
+}
+
+.gold {
+    background-color: gold;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.bronze {
+    background-color: brown;
+}
+
+td > img {
+    width: 100px;
+    height: 50px;
+}
+
+label {
+    font-family: Arial;
+}
+
+p {
+    font-family: Arial;
+}
+
+.champion {
+    color: gold;
+}
+
+.runner-up {
+    color: silver;
+}
+
+.third {
+    color: brown;
+}
+
+.container-fluid {
+    background-color: red;
+}
+
+.container-fluid > .navbar-header > a {
+    color: white;
+}
+
+.container-fluid > .navbar-header > button:hover {
+    background-color: white;
+}
+
+.container-fluid > .navbar-collapse > ul > li > a {
+    color: white;
+}
