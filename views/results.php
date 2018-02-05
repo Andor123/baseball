@@ -44,6 +44,8 @@ include_once 'navigation.php';
             <div id="table17"></div><br />
             <button type="button" class="btn btn-default" id="submit" form="results" onclick="showTable7(18)">2034</button>
             <div id="table18"></div><br />
+            <button type="button" class="btn btn-default" id="submit" form="results" onclick="showTable7(19)">2035</button>
+            <div id="table19"></div><br />
         </div>
     </section>
 <?php

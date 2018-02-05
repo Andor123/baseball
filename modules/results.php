@@ -502,5 +502,33 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 18) {
     echo json_encode($response);
     exit();
 }
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 19) {
+    $html = '';
+    $html .= '<p class="champion">1. Koszovó</p>';
+    $html .= '<p class="runner-up">2. Makaó</p>';
+    $html .= '<p class="third">3. Hollandia</p>';
+    $html .= '<p>4. Nigéria</p>';
+    $html .= '<p>5. Madagaszkár</p>';
+    $html .= '<p>6. Tunézia</p>';
+    $html .= '<p>7. Portugália</p>';
+    $html .= '<p>8. Kazahsztán</p>';
+    $html .= '<p>9. Fidzsi-szigetek</p>';
+    $html .= '<p>10. Kanada</p>';
+    $html .= '<p>11. Tonga</p>';
+    $html .= '<p>12. Kiribati</p>';
+    $html .= '<p>13. Hong Kong</p>';
+    $html .= '<p>14. Guyana</p>';
+    $html .= '<p>15. Haiti</p>';
+    $html .= '<p>16. Uruguay</p>';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
 include_once 'views/results.php';
 ?>
