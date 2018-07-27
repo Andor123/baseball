@@ -1,5 +1,5 @@
 <?php
-define('HOST','https://baseball-application.herokuapp.com/');
+define('HOST','localhost');
 define('USER','root');
 define('PASSWORD','');
 define('DATABASE','baseball');
