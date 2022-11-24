@@ -40,7 +40,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                 $html .= '</thead>';
                 $html .= '<tbody>';
                 $html .= '<tr>';
-                $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" /></td>';
+                $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" style="border:1px solid black" /></td>';
                 $html .= '<td>' . $row['country_name'] . '</td>';
                 $html .= '<td>' . $row['number_of_participations'] . '</td>';
                 $html .= '<td>' . $row['participating_years'] . '</td>';
@@ -72,7 +72,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
                 $html .= '</thead>';
                 $html .= '<tbody>';
                 $html .= '<tr>';
-                $html .= '<td><img src="images/' . $row2['flag'] . '" alt="flag" class="img-responsive center-block" /></td>';
+                $html .= '<td><img src="images/' . $row2['flag'] . '" alt="flag" class="img-responsive center-block" style="border:1px solid black" /></td>';
                 $html .= '<td>' . $row2['country_name'] . '</td>';
                 $html .= '<td>' . $row2['number_of_participations'] . '</td>';
                 $html .= '<td>' . $row2['participating_years'] . '</td>';

@@ -18,7 +18,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
         while ($row = mysqli_fetch_array($result)) {
             $html .= '<tr>';
             $html .= '<td>' . $row['year_of_winning'] . '</td>';
-            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" /></td>';
+            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" style="border:1px solid black" /></td>';
             $html .= '<td>' . $row['country_name'] . '</td>';
             $html .= '</tr>';
         }
@@ -27,13 +27,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $html .= '</table>';
     $html .= '</div>';
     $html .= '<div class="form">';
-    $pg_result = 10;
-    $pg_count = 20;
-    $num = $pg_count / $pg_result;
-    for ($i = 1; $i <= $num; $i++) {
-        $html .= '<button type="button" class="btn btn-default" id="pagination" form="medal_table" onclick="getData3(' . $i . ')">' . $i . '</button>';
-    }
-    $html .= '<br>';
     $html .= '<button type="button" class="btn btn-default" id="submit" form="champions" onclick="hideTable3()">Tábla becsukása</button>';
     $html .= '</div>';
 
@@ -87,7 +80,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 3) {
         while ($row = mysqli_fetch_array($result)) {
             $html .= '<tr>';
             $html .= '<td>' . $row['year_of_winning'] . '</td>';
-            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" /></td>';
+            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" style="border:1px solid black" /></td>';
             $html .= '<td>' . $row['country_name'] . '</td>';
             $html .= '</tr>';
         }
@@ -96,12 +89,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 3) {
     $html .= '</table>';
     $html .= '</div>';
     $html .= '<div class="form">';
-    $pg_count = 20;
-    $num = $pg_count / $pg_result;
-    for ($i = 1; $i <= $num; $i++) {
-        $html .= '<button type="button" class="btn btn-default" id="pagination" form="medal_table" onclick="getData3(' . $i . ')">' . $i . '</button>';
-    }
-    $html .= '<br>';
     $html .= '<button type="button" class="btn btn-default" id="submit" form="champions" onclick="hideTable3()">Tábla becsukása</button>';
     $html .= '</div>';
 

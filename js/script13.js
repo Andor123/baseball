@@ -102,6 +102,21 @@ function showTable7(ajax) {
                     $('#table19').html(response.html).fadeIn();
                 });
             }
+            if (ajax == 20) {
+                $('#table20').fadeOut(400, function () {
+                    $('#table20').html(response.html).fadeIn();
+                });
+            }
+            if (ajax == 21) {
+                $('#table21').fadeOut(400, function () {
+                    $('#table21').html(response.html).fadeIn();
+                });
+            }
+            if (ajax == 22) {
+                $('#table22').fadeOut(400, function () {
+                    $('#table22').html(response.html).fadeIn();
+                });
+            }
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(errorThrown);

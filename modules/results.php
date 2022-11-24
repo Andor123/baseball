@@ -88,7 +88,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 4) {
     $html .= '<p class="champion">1. Kuba</p>';
     $html .= '<p class="runner-up">2. Szenegál</p>';
     $html .= '<p class="third">3. Bosznia és Hercegovina</p>';
-    $html .= '<p>4. Macedónia</p>';
+    $html .= '<p>4. Észak-Macedónia</p>';
     $html .= '<p>5. Szamoa</p>';
     $html .= '<p>6. Lettország</p>';
     $html .= '<p>7. Salamon-szigetek</p>';
@@ -124,7 +124,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 5) {
     $html .= '<p>9. Togo</p>';
     $html .= '<p>10. Salamon-szigetek</p>';
     $html .= '<p>11. Szamoa</p>';
-    $html .= '<p>12. Macedónia</p>';
+    $html .= '<p>12. Észak-Macedónia</p>';
     $html .= '<p>13. Panama</p>';
     $html .= '<p>14. Mali</p>';
     $html .= '<p>15. Tonga</p>';
@@ -401,7 +401,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 15) {
     $html .= '<p>6. Vietnám</p>';
     $html .= '<p>7. Bissau-Guinea</p>';
     $html .= '<p>8. Szamoa</p>';
-    $html .= '<p>9. Salamonk-szigetek</p>';
+    $html .= '<p>9. Salamon-szigetek</p>';
     $html .= '<p>10. Észak-Korea</p>';
     $html .= '<p>11. Jordánia</p>';
     $html .= '<p>12. Nicaragua</p>';
@@ -521,6 +521,98 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 19) {
     $html .= '<p>14. Guyana</p>';
     $html .= '<p>15. Haiti</p>';
     $html .= '<p>16. Uruguay</p>';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 20) {
+    $html = '';
+    $html .= '<p class="champion">1. Vanuatu</p>';
+    $html .= '<p class="runner-up">2. Kazahsztán</p>';
+    $html .= '<p class="third">3. Kanada</p>';
+    $html .= '<p>4. Tunézia</p>';
+    $html .= '<p>5. Marshall-szigetek</p>';
+    $html .= '<p>6. Makaó</p>';
+    $html .= '<p>7. Salamon-szigetek</p>';
+    $html .= '<p>8. Portugália</p>';
+    $html .= '<p>9. San Marino</p>';
+    $html .= '<p>10. Madagaszkár</p>';
+    $html .= '<p>11. Grenada</p>';
+    $html .= '<p>12. Puerto Rico</p>';
+    $html .= '<p>13. Nigéria</p>';
+    $html .= '<p>14. Jemen</p>';
+    $html .= '<p>15. Hollandia</p>';
+    $html .= '<p>16. Koszovó</p>';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 21) {
+    $html = '';
+    $html .= '<p class="champion">1. Tunézia</p>';
+    $html .= '<p class="runner-up">2. Vanuatu</p>';
+    $html .= '<p class="third">3. Kanada</p>';
+    $html .= '<p>4. Algéria</p>';
+    $html .= '<p>5. Salamon-szigetek</p>';
+    $html .= '<p>6. Norvégia</p>';
+    $html .= '<p>7. Fidzsi-szigetek</p>';
+    $html .= '<p>8. Tádzsikisztán</p>';
+    $html .= '<p>9. Uruguay</p>';
+    $html .= '<p>10. Makaó</p>';
+    $html .= '<p>11. Portugália</p>';
+    $html .= '<p>12. Liechtenstein</p>';
+    $html .= '<p>13. Burkina Faso</p>';
+    $html .= '<p>14. Dominika</p>';
+    $html .= '<p>15. Guyana</p>';
+    $html .= '<p>16. Ghána</p>';
+    $html .= '<p>17. Horvátország</p>';
+    $html .= '<p>18. Thaiföld</p>';
+    $html .= '<p>19. Kazahsztán</p>';
+    $html .= '<p>20. Marshall-szigetek</p>';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 22) {
+    $html = '';
+    $html .= '<p class="champion">1. Dél-Afrikai Köztársaság</p>';
+    $html .= '<p class="runner-up">2. Kajmán-szigetek</p>';
+    $html .= '<p class="third">3. Nauru</p>';
+    $html .= '<p>4. Uruguay</p>';
+    $html .= '<p>5. Észak-Korea</p>';
+    $html .= '<p>6. Algéria</p>';
+    $html .= '<p>7. Kanada</p>';
+    $html .= '<p>8. Észtország</p>';
+    $html .= '<p>9. Tunézia</p>';
+    $html .= '<p>10. Norvégia</p>';
+    $html .= '<p>11. Kongói Demokratikus Köztársaság</p>';
+    $html .= '<p>12. Vanuatu</p>';
+    $html .= '<p>13. Makaó</p>';
+    $html .= '<p>14. Görögország</p>';
+    $html .= '<p>15. Málta</p>';
+    $html .= '<p>16. Salamon-szigetek</p>';
+    $html .= '<p>17. Fidzsi-szigetek</p>';
+    $html .= '<p>18. Indonézia</p>';
+    $html .= '<p>19. Tádzsikisztán</p>';
+    $html .= '<p>20. Bermuda</p>';
 
     $response = array(
         'status' => 'success',

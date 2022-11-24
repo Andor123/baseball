@@ -20,7 +20,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_array($result)) {
             $html .= '<tr>';
-            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" /></td>';
+            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" style="border:1px solid black" /></td>';
             $html .= '<td>' . $row['country_name'] . '</td>';
             $html .= '<td>' . $row['gold_medals'] . '</td>';
             $html .= '<td>' . $row['silver_medals'] . '</td>';
@@ -33,13 +33,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $html .= '</table>';
     $html .= '</div>';
     $html .= '<div class="form">';
-    $pg_result = 10;
-    $pg_count = 40;
-    $num = $pg_count / $pg_result;
-    for ($i = 1; $i <= $num; $i++) {
-        $html .= '<button type="button" class="btn btn-default" id="pagination" form="medal_table" onclick="getData(' . $i . ')">' . $i . '</button>';
-    }
-    $html .= '<br>';
     $html .= '<button type="button" class="btn btn-default" id="submit" form="medal_table" onclick="hideTable()">Tábla becsukása</button>';
     $html .= '</div>';
 
@@ -95,7 +88,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 3) {
     if (mysqli_num_rows($result) > 0) {
         while ($row = mysqli_fetch_array($result)) {
             $html .= '<tr>';
-            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" /></td>';
+            $html .= '<td><img src="images/' . $row['flag'] . '" alt="flag" class="img-responsive center-block" style="border:1px solid black" /></td>';
             $html .= '<td>' . $row['country_name'] . '</td>';
             $html .= '<td>' . $row['gold_medals'] . '</td>';
             $html .= '<td>' . $row['silver_medals'] . '</td>';
@@ -108,12 +101,6 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 3) {
     $html .= '</table>';
     $html .= '</div>';
     $html .= '<div class="form">';
-    $pg_count = 40;
-    $num = $pg_count / $pg_result;
-    for ($i = 1; $i <= $num; $i++) {
-        $html .= '<button type="button" class="btn btn-default" id="pagination" form="medal_table" onclick="getData(' . $i . ')">' . $i . '</button>';
-    }
-    $html .= '<br>';
     $html .= '<button type="button" class="btn btn-default" id="submit" form="medal_table" onclick="hideTable()">Tábla becsukása</button>';
     $html .= '</div>';
 
