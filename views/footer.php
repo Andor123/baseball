@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; 2022. Salamon Andor</p>
+    <p id="date"></p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
@@ -20,5 +20,10 @@
 <script src="js/script14.js"></script>
 <script src="js/script15.js"></script>
 <script src="js/script16.js"></script>
+<script src="js/script17.js"></script>
+<script>
+    let today = new Date();
+    document.getElementById("date").innerHTML = "&copy; " + today.getFullYear() + ", Salamon Andor";
+</script>
 </body>
 </html>

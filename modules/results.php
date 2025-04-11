@@ -17,6 +17,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $html .= '<p>14. El Salvador</p>';
     $html .= '<p>15. Vanuatu</p>';
     $html .= '<p>16. Magyarország</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(1)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -45,6 +48,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
     $html .= '<p>14. Mianmar</p>';
     $html .= '<p>15. Etiópia</p>';
     $html .= '<p>16. Szerbia</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(2)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -73,6 +79,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 3) {
     $html .= '<p>14. Gabon</p>';
     $html .= '<p>15. Kuba</p>';
     $html .= '<p>16. Benin</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(3)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -101,6 +110,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 4) {
     $html .= '<p>14. Kelet-Timor</p>';
     $html .= '<p>15. Barbados</p>';
     $html .= '<p>16. Palau</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(4)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -129,6 +141,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 5) {
     $html .= '<p>14. Mali</p>';
     $html .= '<p>15. Tonga</p>';
     $html .= '<p>16. Bosznia és Hercegovina</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(5)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -157,6 +172,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 6) {
     $html .= '<p>14. Kuba</p>';
     $html .= '<p>15. Ghána</p>';
     $html .= '<p>16. Észtország</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(6)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -185,6 +203,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 7) {
     $html .= '<p>14. Kína</p>';
     $html .= '<p>15. Jordánia</p>';
     $html .= '<p>16. Brunei</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(7)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -213,6 +234,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 8) {
     $html .= '<p>14. Olaszország</p>';
     $html .= '<p>15. Comore-szigetek</p>';
     $html .= '<p>16. Marshall-szigetek</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(8)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -241,6 +265,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 9) {
     $html .= '<p>14. Vatikánváros</p>';
     $html .= '<p>15. Madagaszkár</p>';
     $html .= '<p>16. Marshall-szigetek</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(9)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -269,6 +296,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 10) {
     $html .= '<p>14. Izland</p>';
     $html .= '<p>15. Laos</p>';
     $html .= '<p>16. Zimbabwe</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(10)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -297,6 +327,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 11) {
     $html .= '<p>14. Lesotho</p>';
     $html .= '<p>15. Tonga</p>';
     $html .= '<p>16. Venezuela</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(11)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -325,6 +358,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 12) {
     $html .= '<p>14. Ecuador</p>';
     $html .= '<p>15. Jemen</p>';
     $html .= '<p>16. Jamaica</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(12)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -353,6 +389,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 13) {
     $html .= '<p>14. Dánia</p>';
     $html .= '<p>15. Bhután</p>';
     $html .= '<p>16. Szudán</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(13)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -381,6 +420,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 14) {
     $html .= '<p>14. Vietnám</p>';
     $html .= '<p>15. Kína</p>';
     $html .= '<p>16. Tuvalu</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(14)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -409,6 +451,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 15) {
     $html .= '<p>14. Zöld-foki Köztársaság</p>';
     $html .= '<p>15. Koszovó</p>';
     $html .= '<p>16. Puerto Rico</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(15)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -437,6 +482,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 16) {
     $html .= '<p>14. Venezuela</p>';
     $html .= '<p>15. Tonga</p>';
     $html .= '<p>16. Thaiföld</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(16)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -465,6 +513,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 17) {
     $html .= '<p>14. Bissau-Guinea</p>';
     $html .= '<p>15. Montenegró</p>';
     $html .= '<p>16. Szamoa</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(17)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -493,6 +544,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 18) {
     $html .= '<p>14. Mali</p>';
     $html .= '<p>15. Bahama-szigetek</p>';
     $html .= '<p>16. San Marino</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(18)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -521,6 +575,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 19) {
     $html .= '<p>14. Guyana</p>';
     $html .= '<p>15. Haiti</p>';
     $html .= '<p>16. Uruguay</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(19)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -549,6 +606,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 20) {
     $html .= '<p>14. Jemen</p>';
     $html .= '<p>15. Hollandia</p>';
     $html .= '<p>16. Koszovó</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(20)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -581,6 +641,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 21) {
     $html .= '<p>18. Thaiföld</p>';
     $html .= '<p>19. Kazahsztán</p>';
     $html .= '<p>20. Marshall-szigetek</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(21)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
@@ -613,6 +676,9 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 22) {
     $html .= '<p>18. Indonézia</p>';
     $html .= '<p>19. Tádzsikisztán</p>';
     $html .= '<p>20. Bermuda</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(22)">Tábla becsukása</button>';
+    $html .= '</div>';
 
     $response = array(
         'status' => 'success',
