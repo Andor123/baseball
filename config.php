@@ -15,8 +15,8 @@ mysqli_query($connection, 'SET CHARACTER SET utf8') or die(mysqli_error($connect
 mysqli_query($connection, 'SET COLLATION_CONNECTION="utf8_general_ci"') or die(mysqli_error($connection));
 
 $menu = array(
-    'medal_table' => 'Éremtáblázat(orszzágonként)',
-    'continental_table' => 'Éremtáblázat(kontinensenként)',
+    'medal_table' => 'Éremtáblázat (orszzágonként)',
+    'continental_table' => 'Éremtáblázat (kontinensenként)',
     'results' => 'Világbajnokságok eredményei',
     'participation' => 'Résztvevő országok listája',
     'continent_participation' => 'Országok részvétele kontinensenként',
