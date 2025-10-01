@@ -117,6 +117,11 @@ function showTable7(ajax) {
                     $('#table22').html(response.html).fadeIn();
                 });
             }
+            if (ajax == 23) {
+                $('#table23').fadeOut(400, function () {
+                    $('#table23').html(response.html).fadeIn();
+                });
+            }
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(errorThrown);

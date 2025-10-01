@@ -688,5 +688,40 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 22) {
     echo json_encode($response);
     exit();
 }
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 23) {
+    $html = '';
+    $html .= '<p class="champion">1. Uruguay</p>';
+    $html .= '<p class="runner-up">2. Jordánia</p>';
+    $html .= '<p class="third">3. Dánia</p>';
+    $html .= '<p>4. Türkmenisztán</p>';
+    $html .= '<p>5. Kajmán-szigetek</p>';
+    $html .= '<p>6. Észak-Korea</p>';
+    $html .= '<p>7. Kanada</p>';
+    $html .= '<p>8. Norvégia</p>';
+    $html .= '<p>9. Tunézia</p>';
+    $html .= '<p>10. Marshall-szigetek</p>';
+    $html .= '<p>11. Salamon-szigetek</p>';
+    $html .= '<p>12. Litvánia</p>';
+    $html .= '<p>13. Algéria</p>';
+    $html .= '<p>14. Nauru</p>';
+    $html .= '<p>15. Tuvalu</p>';
+    $html .= '<p>16. Grúzia</p>';
+    $html .= '<p>17. Venezuela</p>';
+    $html .= '<p>18. Észtország</p>';
+    $html .= '<p>19. Niger</p>';
+    $html .= '<p>20. Dél-Afrikai Köztársaság</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(23)">Tábla becsukása</button>';
+    $html .= '</div>';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
 include_once 'views/results.php';
 ?>
