@@ -10,11 +10,11 @@ include_once 'navigation.php';
             <form class="form-inline" method="post" action="" name="search" id="search">
                 <div class="form-group">
                     <label for="country_name">Ország neve:</label><br /><br />
-                    <input type="text" class="form-control" id="country_name" name="country_name" placeholder="Valami" />
+                    <input type="text" class="form-control" id="country_name" name="country_name" placeholder="Országnév" />
                 </div>
             </form><br />
             <button type="button" class="btn btn-default" id="submit" form="search" onclick="showTable6()">Keresés</button>
-            <div id="table"></div>
+            <div id="table"></div><br />
         </div>
     </section>
 <?php

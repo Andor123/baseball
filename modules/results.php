@@ -8,7 +8,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 1) {
     $html .= '<p>5. Kambodzsa</p>';
     $html .= '<p>6. Libéria</p>';
     $html .= '<p>7. Mikronézia</p>';
-    $html .= '<p>8. Djibouti</p>';
+    $html .= '<p>8. Dzsibuti</p>';
     $html .= '<p>9. Pápua Új-Guinea</p>';
     $html .= '<p>10. Albánia</p>';
     $html .= '<p>11. Szaud-Arábia</p>';
@@ -40,7 +40,7 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 2) {
     $html .= '<p>6. Barbados</p>';
     $html .= '<p>7. Salamon-szigetek</p>';
     $html .= '<p>8. Palau</p>';
-    $html .= '<p>9. Djibouti</p>';
+    $html .= '<p>9. Dzsibuti</p>';
     $html .= '<p>10. Kambodzsa</p>';
     $html .= '<p>11. Vatikánváros</p>';
     $html .= '<p>12. Libéria</p>';
@@ -713,6 +713,41 @@ if (isset($_GET['ajax']) && $_GET['ajax'] == 23) {
     $html .= '<p>20. Dél-Afrikai Köztársaság</p>';
     $html .= '<div class="form">';
     $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(23)">Tábla becsukása</button>';
+    $html .= '</div>';
+
+    $response = array(
+        'status' => 'success',
+        'html' => $html
+    );
+
+    echo json_encode($response);
+    exit();
+}
+
+if (isset($_GET['ajax']) && $_GET['ajax'] == 24) {
+    $html = '';
+    $html .= '<p class="champion">1. Marshall-szigetek</p>';
+    $html .= '<p class="runner-up">2. Norvégia</p>';
+    $html .= '<p class="third">3. Ausztria</p>';
+    $html .= '<p>4. Brunei</p>';
+    $html .= '<p>5. Uruguay</p>';
+    $html .= '<p>6. Ukrajna</p>';
+    $html .= '<p>7. Kajmán-szigetek</p>';
+    $html .= '<p>8. Türkmenisztán</p>';
+    $html .= '<p>9. Jordánia</p>';
+    $html .= '<p>10. Salamon-szigetek</p>';
+    $html .= '<p>11. Dánia</p>';
+    $html .= '<p>12. Tunézia</p>';
+    $html .= '<p>13. Tonga</p>';
+    $html .= '<p>14. Belize</p>';
+    $html .= '<p>15. Szamoa</p>';
+    $html .= '<p>16. Dzsibuti</p>';
+    $html .= '<p>17. Észak-Korea</p>';
+    $html .= '<p>18. Kanada</p>';
+    $html .= '<p>19. Eritrea</p>';
+    $html .= '<p>20. Egyenlítői Guinea</p>';
+    $html .= '<div class="form">';
+    $html .= '<button type="button" class="btn btn-default" id="submit" form="results" onclick="hideTable7(24)">Tábla becsukása</button>';
     $html .= '</div>';
 
     $response = array(

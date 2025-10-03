@@ -3,11 +3,7 @@
     font-family: Arial;
 }
 
-th {
-    font-family: Arial;
-}
-
-td {
+th, td {
     font-family: Arial;
 }
 
@@ -38,15 +34,18 @@ footer > p {
 }
 
 .gold {
-    background-color: gold;
+    background-color: darkgoldenrod;
+    color: white;
 }
 
 .silver {
-    background-color: silver;
+    background-color: darkgrey;
+    color: white;
 }
 
 .bronze {
-    background-color: brown;
+    background-color: darkred;
+    color: white;
 }
 
 td > img {
@@ -54,24 +53,20 @@ td > img {
     height: 50px;
 }
 
-label {
-    font-family: Arial;
-}
-
-p {
+label, p {
     font-family: Arial;
 }
 
 .champion {
-    color: gold;
+    color: darkgoldenrod;
 }
 
 .runner-up {
-    color: silver;
+    color: darkgrey;
 }
 
 .third {
-    color: brown;
+    color: darkred;
 }
 
 .container-fluid {

@@ -9,7 +9,7 @@ include_once 'navigation.php';
     <div class="form">
         <form method="post" action="" name="medal_table" id="medal_table"></form>
         <button type="button" class="btn btn-default" id="submit" form="medal_table" onclick="showTable()">Tábla kiíratása</button>
-        <div id="table"></div>
+        <div id="table"></div><br />
     </div>
 </section>
 <?php
