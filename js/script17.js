@@ -132,6 +132,11 @@ function hideTable7(ajax) {
                     $('#table25').html(response.html).fadeOut();
                 });
             }
+            if (ajax == 26) {
+                $('#table26').fadeIn(400, function () {
+                    $('#table26').html(response.html).fadeOut();
+                });
+            }
         },
         error: function (jqXHR, textStatus, errorThrown) {
             console.log(errorThrown);
